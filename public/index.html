@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Management</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <h1>Gym Membership Management</h1>
+
+    <!-- Form for adding/updating a member -->
+    <div>
+        <h3>Add/Edit Member</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" /><br />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" /><br />
+
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" /><br />
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" /><br />
+
+        <label for="membershipType">Membership Type:</label>
+        <input type="text" id="membershipType" /><br />
+
+        <button onclick="addOrUpdateMember()">Submit</button>
+    </div>
+
+    <!-- Section to display members -->
+    <h3>Members List</h3>
+    <input type="text" id="searchInput" placeholder="Search members..." onkeyup="searchMembers()"/>
+    <div id="membersList"></div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
